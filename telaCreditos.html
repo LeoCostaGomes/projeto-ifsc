@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Créditos</title>
+    <style>
+        body {
+            background-color: #000; 
+            color: #fff; 
+            font-family: Arial, sans-serif;
+            align-items: center;
+            overflow: hidden;
+        }
+        .credits-container {
+            text-align: center;
+            animation: scroll-up 10s linear infinite;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(150%);
+            }
+            1000% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="credits-container">
+        <h1>Créditos</h1>
+        <h2>Desenvolvido por:</h2>
+        <p>Leonardo Costa</p>
+        <h2>Agradecimentos Especiais:</h2>
+        <p>Milena Pereira</p>
+        <p>Fabricio Bueno</p>
+        <h2>Obrigado por usar nosso site!</h2>
+    </div>
+</body>
+</html>
