@@ -245,3 +245,17 @@ body.light footer {
 body.light footer a {
     color: #0369a1;
 }
+
+article:first-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+article:first-of-type img {
+    width: 500px;      /* tamanho grande */
+    max-width: 90%;    /* adapta no celular */
+    height: auto;
+    border-radius: 12px;
+}
