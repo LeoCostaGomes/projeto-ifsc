@@ -171,3 +171,40 @@ article img {
         width: 90%;
     }
 }
+
+/* ===== TEMA CLARO ===== */
+body.light {
+    background: #f1f5f9;
+    color: #020617;
+}
+
+body.light .navbar {
+    background: #e2e8f0;
+}
+
+body.light .navbar a {
+    color: #0369a1;
+}
+
+body.light .navbar a:hover {
+    background: #0369a1;
+    color: white;
+}
+
+body.light .tabela {
+    background: #ffffff;
+}
+
+body.light .tabela th {
+    background: #38bdf8;
+    color: #020617;
+}
+
+body.light .codigo {
+    background: #e2e8f0;
+    color: #0369a1;
+}
+
+body.light .tag {
+    color: #15803d;
+}
