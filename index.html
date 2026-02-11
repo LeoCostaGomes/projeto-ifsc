@@ -716,6 +716,38 @@ window.onload = function () {
         document.body.classList.add("light");
     }
 };
+
+function filterTags() {
+            const input = document.getElementById('search-bar');
+            const filter = input.value.toLowerCase();
+            const tables = document.querySelectorAll('.tabela');
+            const resultado = document.getElementById('resultados');
+
+            // Inicializa o contador de resultados
+            let resultados = 0;
+
+            tables.forEach((table) => {
+                const rows = table.getElementsByTagName('tr');
+                for (let i = 1; i < rows.length; i++) { // Ignora a primeira linha (cabeçalho)
+                    const row = rows[i];
+                    const cells = row.getElementsByTagName('td');
+                    const tagText = cells[0]?.textContent.toLowerCase() || ''; // Previne erros caso cells[0] não exista
+                    const descriptionText = cells[1]?.textContent.toLowerCase() || ''; // Previne erros caso cells[0] não exista
+                    const exampleText = cells[2]?.textContent.toLowerCase() || ''; // Previne erros caso cells[0] não exista
+                    // Verifica se o texto da tag corresponde ao filtro
+                    if (tagText.indexOf(filter) > -1 || descriptionText.indexOf(filter) > -1) {
+                        row.classList.remove('hidden');
+                        resultados++;
+                    } else {
+                        row.classList.add('hidden');
+                    }
+                    if (resultados > numeroTags) {
+                        resultados = numeroTags;
+                    }
+                }
+            });
+            // Atualiza o número de resultados
+            resultado.textContent = resultados.toString();}
 </script>
     <br>
     <footer id="rodapé">
