@@ -259,7 +259,7 @@ article:first-of-type {
 }
 
 article:first-of-type img {
-    width: 900px;      /* tamanho grande */
+    width: 850px;      /* tamanho grande */
     max-width: 90%;    /* adapta no celular */
     height: auto;
     border-radius: 12px;
