@@ -34,15 +34,21 @@ h2 {
     margin: 0 auto 20px;
 }
 
-/* Imagens */
+article {
+    display: flex;
+    justify-content: center; /* centraliza */
+    align-items: center;
+    gap: 20px; /* espaço entre as imagens */
+    flex-wrap: wrap; /* quebra no celular */
+    margin: 20px 0;
+}
+
 article img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
+
 
 /* Navbar */
 .navbar {
