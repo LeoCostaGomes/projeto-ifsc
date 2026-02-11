@@ -254,7 +254,7 @@ article:first-of-type {
 }
 
 article:first-of-type img {
-    width: 1500px;      /* tamanho grande */
+    width: 1000px;      /* tamanho grande */
     max-width: 90%;    /* adapta no celular */
     height: auto;
     border-radius: 12px;
