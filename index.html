@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body id="body" class="light">
+<body id="body">
     <article>
         <img src="imagem1.png" alt="Código demonstrativo em html"
             width="800" height="400" id="image1">
@@ -700,7 +700,25 @@
     <script>
 function animarBotao() {
     document.body.classList.toggle("light");
+
+    // salva o tema escolhido
+    if (document.body.classList.contains("light")) {
+        localStorage.setItem("tema", "light");
+    } else {
+        localStorage.setItem("tema", "dark");
+    }
 }
+
+// quando a página abrir, restaurar o tema salvo
+window.onload = function () {
+    const temaSalvo = localStorage.getItem("tema");
+
+    if (temaSalvo === "dark") {
+        document.body.classList.remove("light");
+    } else {
+        document.body.classList.add("light");
+    }
+};
 </script>
     <br>
     <footer id="rodapé">
