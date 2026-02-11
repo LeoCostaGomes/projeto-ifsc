@@ -259,3 +259,7 @@ article:first-of-type img {
     height: auto;
     border-radius: 12px;
 }
+
+.hidden {
+    display: none;
+}
