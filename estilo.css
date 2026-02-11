@@ -214,3 +214,34 @@ body.light .codigo {
 body.light .tag {
     color: #15803d;
 }
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #020617;
+    color: #f1f5f9;
+    border-top: 2px solid #38bdf8;
+}
+
+/* links do footer */
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* versão clara */
+body.light footer {
+    background: #e2e8f0;
+    color: #020617;
+    border-top: 2px solid #0369a1;
+}
+
+body.light footer a {
+    color: #0369a1;
+}
