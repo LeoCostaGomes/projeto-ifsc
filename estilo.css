@@ -41,6 +41,7 @@ article {
     gap: 20px; /* espaço entre as imagens */
     flex-wrap: wrap; /* quebra no celular */
     margin: 20px 0;
+    background-color: #020617;
 }
 
 article img {
@@ -246,6 +247,10 @@ body.light footer a {
     color: #0369a1;
 }
 
+body.light article{
+    background-color: #e2e8f0;
+}
+
 article:first-of-type {
     display: flex;
     justify-content: center;
@@ -254,7 +259,7 @@ article:first-of-type {
 }
 
 article:first-of-type img {
-    width: 500px;      /* tamanho grande */
+    width: 915px;      /* tamanho grande */
     max-width: 90%;    /* adapta no celular */
     height: auto;
     border-radius: 12px;
