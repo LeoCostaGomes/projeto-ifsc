@@ -251,6 +251,10 @@ body.light article{
     background-color: #e2e8f0;
 }
 
+body.light .tabela tr:hover {
+    background: #e2e8f0;
+}
+
 article:first-of-type {
     display: flex;
     justify-content: center;
